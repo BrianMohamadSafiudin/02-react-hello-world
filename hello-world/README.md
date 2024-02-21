@@ -98,7 +98,7 @@ npm run dev
 - Ini dimungkinkan karena `webpack` (atau bundler lain yang mendukung fitur ini) secara cerdas menggantikan modul lama dengan yang baru di saat runtime, sambil mempertahankan keadaan aplikasi yang sedang berjalan. Ini memungkinkan pengembangan yang lebih cepat karena pengembang tidak perlu menunggu reload halaman setiap kali mereka membuat perubahan kecil.
 
 - Selain itu, React memiliki fitur serupa yang disebut `"Fast Refresh"`, yang memungkinkan penggantian komponen secara langsung tanpa perlu me-reload seluruh halaman. Ini memungkinkan pengembangan yang lebih cepat dan alur kerja yang lebih mulus.
-###### -
+###### .
 
 # Tugas Praktikum
 
@@ -123,4 +123,43 @@ Plugin Ecosystem: Memiliki ekosistem plugin yang luas, memungkinkan penyesuaian 
 ![Screenshot P1](assets-report/gatsby.jpg)
 
 - Perbedaan utama di antara ketiganya adalah dalam pendekatan routing, pengambilan data, dan cara mereka menghasilkan halaman. Next.js fokus pada SSR dan SSG dengan file-based routing. Remix menonjol dengan pengelolaan data yang terpisah dan pengenalan Server Components. Gatsby terkenal dengan kemampuannya dalam pembuatan situs statis dengan menggunakan GraphQL dan ekosistem plugin yang luas. Pilihan antara ketiganya tergantung pada kebutuhan spesifik proyek dan preferensi pengembang.
+###### .
 
+# Komponen React
+
+#### Aplikasi React dibuat dari komponen. Komponen adalah bagian dari UI (user interface, antarmuka pengguna) yang memiliki logika dan tampilan tersendiri. Sebuah komponen dapat berukuran sekecil tombol, atau sebesar seluruh halaman.
+
+#### Komponen React adalah fungsi JavaScript yang mengembalikan markup:
+
+```
+function MyButton() {
+  return (
+    <button>Saya adalah tombol</button>
+  );
+}
+```
+
+Sekarang setelah Anda mendeklarasikan MyButton, Anda dapat menyarangkannya ke dalam komponen lain:
+
+```
+export default function MyApp() {
+  return (
+    <div>
+      <h1>Selamat datang di aplikasi saya</h1>
+      <MyButton />
+    </div>
+  );
+}
+```
+
+#### Perhatikan bahwa komponen MyButton dimulai dengan huruf kapital. Dengan cara itulah Anda mengetahui bahwa itu adalah sebuah komponen React. Nama komponen React harus selalu dimulai dengan huruf kapital, sedangkan tag HTML harus menggunakan huruf kecil.
+
+#### Kata kunci export default menentukan komponen utama di dalam berkas (file). Jika Anda tidak terbiasa dengan beberapa bagian dari sintaksis JavaScript, MDN dan javascript.info memiliki referensi yang bagus.
+
+## Soal 4
+#### Buatlah komponen MyTextNimName() berdasarkan kode dari soal nomor 3 sebelumnya. Lalu panggillah komponen tersebut. Apakah ada perubahan tampilan ? Mengapa demikian ?
+
+![Screenshot P1](assets-report/soal4kode.jpg)
+![Screenshot P1](assets-report/soal4tampilan.jpg)
+
+- Perubahan dalam tampilan hanya penambahan teks karena hanya memanggil komponen yang menampilkan teks statis. Tampilan akan sama persis seperti sebelumnya, hanya dengan penambahan teks yang ditampilkan oleh komponen MyTextNimName().
