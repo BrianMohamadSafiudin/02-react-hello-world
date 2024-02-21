@@ -98,3 +98,29 @@ npm run dev
 - Ini dimungkinkan karena `webpack` (atau bundler lain yang mendukung fitur ini) secara cerdas menggantikan modul lama dengan yang baru di saat runtime, sambil mempertahankan keadaan aplikasi yang sedang berjalan. Ini memungkinkan pengembangan yang lebih cepat karena pengembang tidak perlu menunggu reload halaman setiap kali mereka membuat perubahan kecil.
 
 - Selain itu, React memiliki fitur serupa yang disebut `"Fast Refresh"`, yang memungkinkan penggantian komponen secara langsung tanpa perlu me-reload seluruh halaman. Ini memungkinkan pengembangan yang lebih cepat dan alur kerja yang lebih mulus.
+###### -
+
+# Tugas Praktikum
+
+#### Cobalah buat project react lainnya dengan menggunakan framework Remix dan Gatsby. Ini tidak perlu di push, cukup screenshot dan jelaskan perbedaannya diantara ketiga framework tersebut (termasuk Next.js) di file README nomor 1.
+
+- `Next.js` SSR (Server-Side Rendering): Next.js secara default mendukung SSR, yang berarti bahwa rendering halaman dilakukan di server sebelum mengirimkannya ke browser, sehingga meningkatkan kinerja dan SEO.
+File-based Routing: Next.js menggunakan sistem routing berbasis file, yang berarti Anda dapat membuat rute baru dengan menambahkan file di dalam direktori pages.
+API Routes: Memiliki kemampuan untuk membuat API routes secara langsung dari dalam proyek Next.js.
+Static Generation: Mendukung Static Site Generation (SSG), yang memungkinkan pembuatan situs statis yang dioptimalkan untuk kinerja.
+Remix:
+![Screenshot P1](assets-report/nextjs.jpg)
+
+- `Remix` memisahkan pengambilan data dari rendering komponen, memungkinkan Anda mengelola data dengan lebih terstruktur.
+Server Components: Memperkenalkan konsep Server Components, yang memungkinkan rendering di server dan di client untuk komponen yang sama.
+Adaptability: Dirancang untuk fleksibilitas dan dapat diintegrasikan dengan berbagai backend dan API.
+Gatsby:
+![Screenshot P1](assets-report/remix.jpg)
+
+- `Gatsby` terkenal karena kemampuannya untuk menghasilkan situs statis yang dioptimalkan untuk kinerja.
+GraphQL: Menggunakan GraphQL untuk mengambil data, yang memungkinkan Anda untuk mengambil data secara efisien dari berbagai sumber.
+Plugin Ecosystem: Memiliki ekosistem plugin yang luas, memungkinkan penyesuaian dan integrasi dengan berbagai layanan dan alat.
+![Screenshot P1](assets-report/gatsby.jpg)
+
+- Perbedaan utama di antara ketiganya adalah dalam pendekatan routing, pengambilan data, dan cara mereka menghasilkan halaman. Next.js fokus pada SSR dan SSG dengan file-based routing. Remix menonjol dengan pengelolaan data yang terpisah dan pengenalan Server Components. Gatsby terkenal dengan kemampuannya dalam pembuatan situs statis dengan menggunakan GraphQL dan ekosistem plugin yang luas. Pilihan antara ketiganya tergantung pada kebutuhan spesifik proyek dan preferensi pengembang.
+
