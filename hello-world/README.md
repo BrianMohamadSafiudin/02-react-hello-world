@@ -163,3 +163,34 @@ export default function MyApp() {
 ![Screenshot P1](assets-report/soal4tampilan.jpg)
 
 - Perubahan dalam tampilan hanya penambahan teks karena hanya memanggil komponen yang menampilkan teks statis. Tampilan akan sama persis seperti sebelumnya, hanya dengan penambahan teks yang ditampilkan oleh komponen MyTextNimName().
+###### .
+
+# Menulis markup dengan JSX
+
+#### Sintaksis markup yang Anda lihat di atas disebut dengan JSX. JSX ini opsional, tetapi sebagian besar proyek React menggunakan JSX untuk kenyamanannya. Semua alat yang kami rekomendasikan untuk pengembangan lokal mendukung JSX secara langsung.
+
+#### JSX lebih ketat daripada HTML. Anda harus menutup tag seperti <br />. Komponen Anda juga tidak boleh mengembalikan beberapa tag JSX. Anda harus membungkusnya menjadi induk bersama (shared parent), seperti div.../div atau sebuah pembungkus kosong <>...</>
+  
+  ```
+  function AboutPage() {
+  return (
+    <>
+      <h1>Tentang</h1>
+      <p>Halo.<br />Apa kabar?</p>
+    </>
+  );
+}
+  ```
+
+## Soal 5
+#### Buatlah komponen MyPage() berdasarkan project praktikum 1 ini yang berisi kode-kode HTML dari fungsi Home(). Lalu panggillah komponen tersebut. Apakah ada perubahan tampilan ? Mengapa demikian ?
+
+![Screenshot P1](assets-report/soal5convert.jpg)
+![Screenshot P1](assets-report/soal5kode.jpg)
+![Screenshot P1](assets-report/soal5tampilan.jpg)
+
+- Secara tampilan akan menambahkan tampilan home dari fungsi yang dipanggil, secara fungsional penggunaan komponen ini memisahkan logika dan tampilan, yang dapat membantu dalam organisasi kode yang lebih baik.
+
+## Soal 6
+#### Gunakanlah Kode JSX image tersebut, ganti dengan NIM, Nama Anda beserta link gambar ganti dengan foto Anda (bisa dari link medsos atau lainnya). Push codenya dan screenshot hasilnya.
+![Screenshot P1](assets-report/soal6.jpg)
