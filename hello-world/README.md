@@ -1,8 +1,8 @@
-# Praktikum: Membuat Project Pertama ReactJS
-
 ### Nama : Brian Mohamad Safiudin
 ### NIM : 2141720133
-### Kelas : TI-3F
+### Kelas : TI-3A
+
+# Praktikum: Membuat Project Pertama ReactJS
 
 ## Langkah 1 - 2
 #### Buatlah folder baru bernama belajar-react lalu di dalam folder tersebut, buatlah project baru bernama hello-world
